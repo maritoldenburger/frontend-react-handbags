@@ -5,6 +5,9 @@ import bag2 from "./assets/bag_2.png"
 import bag3 from "./assets/bag_3.png"
 import bag4 from "./assets/bag_4.png"
 import Product from "./components/Product.jsx";
+import brand from "./assets/brand.png"
+import our_story from "./assets/our_story.png"
+import Tile from "./components/Tile.jsx";
 
 
 function App() {
@@ -51,6 +54,27 @@ function App() {
                     productPrice={150}
                 />
             </main>
+            <footer>
+                <Tile tileTitle="The brand">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi,
+                        fuga pariatur praesentium quia sequi similique sunt.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi,
+                        fuga pariatur praesentium quia sequi similique sunt.</p>
+                </Tile>
+                <Tile
+                    tileImage={brand}
+                    imageDescription="Brand logo"
+                />
+                <Tile
+                    tileImage={our_story}
+                    imageDescription="The designers"
+                />
+                <Tile tileTitle="Our story">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eligendi exercitationem
+                        illo, labore laboriosam nihil omnis praesentium. Aspernatur cum deleniti excepturi itaque,
+                        laboriosam nisi rerum sunt. At repellendus tenetur veniam!</p>
+                </Tile>
+            </footer>
         </>
     )
 }
