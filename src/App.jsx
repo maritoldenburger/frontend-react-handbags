@@ -4,6 +4,7 @@ import bag1 from "./assets/bag_1.png"
 import bag2 from "./assets/bag_2.png"
 import bag3 from "./assets/bag_3.png"
 import bag4 from "./assets/bag_4.png"
+import Product from "./components/Product.jsx";
 
 
 function App() {
@@ -13,23 +14,42 @@ function App() {
             <nav>
                 <Button
                     buttonText="to the collection"
-                    disabledButton=""
+                    disabledButton={false}
                 />
                 <Button
                     buttonText="shop all bags"
+                    disabledButton={false}
                 />
                 <Button
                     buttonText="pre-orders"
                     disabledButton={true}
                 />
             </nav>
-
             <main>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag1} alt="The handy bag"/>
-                    <p>The handy bag</p>
-                </article>
+                <Product
+                    productLabel="Best seller"
+                    productImage={bag1}
+                    productName="The handy bag"
+                    productPrice={400}
+                />
+                <Product
+                    productLabel="Best seller"
+                    productImage={bag2}
+                    productName="The stylish bag"
+                    productPrice={250}
+                />
+                <Product
+                    productLabel="New collection"
+                    productImage={bag3}
+                    productName="The simple bag"
+                    productPrice={300}
+                />
+                <Product
+                    productLabel="New collection"
+                    productImage={bag4}
+                    productName="The trendy bag"
+                    productPrice={150}
+                />
             </main>
         </>
     )

@@ -3,7 +3,7 @@ function Button({buttonText, disabledButton}) {
         <button onClick={() => {
             console.log(buttonText);
         }} disabled={disabledButton}>{buttonText}</button>
-    )
+    );
 }
 
 export default Button
